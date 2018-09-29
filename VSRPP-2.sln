@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Infrastructure", "Infrastructure\Infrastructure.shproj", "{9503BC94-A841-44C7-8A9A-049A7CD5C440}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Infrastructure\Infrastructure.projitems*{9503bc94-a841-44c7-8a9a-049a7cd5c440}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9D26DB1-E6D5-4AEC-913A-DC1BB80BCF4F}
+	EndGlobalSection
+EndGlobal
