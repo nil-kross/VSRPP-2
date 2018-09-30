@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console Requester", "Consol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Requester Library", "Requester Library\Requester Library.csproj", "{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYT Requester", "NYT Requester\NYT Requester.csproj", "{BCD35683-9BAE-4922-B428-BB593CA509DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
