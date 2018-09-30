@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 
-namespace Lomtseu.Requester
+namespace Lomtseu
 {
     public class Requester
     {

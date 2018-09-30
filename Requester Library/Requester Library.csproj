@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>Lomtseu.Requester</RootNamespace>
+    <RootNamespace>Lomtseu</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
