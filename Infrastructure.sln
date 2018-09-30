@@ -1,13 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2016
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Infrastructure", "Infrastructure\Infrastructure.shproj", "{9503BC94-A841-44C7-8A9A-049A7CD5C440}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console Requester", "Console Requester\Console Requester.csproj", "{906D21E9-8E87-4DC2-844F-4585135EC1AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Requester Library", "Requester Library\Requester Library.csproj", "{36E96F2A-BA4D-47E9-8EDC-98FC36F723DB}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Infrastructure\Infrastructure.projitems*{9503bc94-a841-44c7-8a9a-049a7cd5c440}*SharedItemsImports = 13
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{906D21E9-8E87-4DC2-844F-4585135EC1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906D21E9-8E87-4DC2-844F-4585135EC1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906D21E9-8E87-4DC2-844F-4585135EC1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906D21E9-8E87-4DC2-844F-4585135EC1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E96F2A-BA4D-47E9-8EDC-98FC36F723DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E96F2A-BA4D-47E9-8EDC-98FC36F723DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E96F2A-BA4D-47E9-8EDC-98FC36F723DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E96F2A-BA4D-47E9-8EDC-98FC36F723DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
