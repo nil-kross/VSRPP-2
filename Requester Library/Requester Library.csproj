@@ -5,4 +5,9 @@
     <RootNamespace>Lomtseu.Requester</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />
+    <PackageReference Include="WinInsider.System.Net.Http.Formatting" Version="1.0.5" />
+  </ItemGroup>
+
 </Project>
