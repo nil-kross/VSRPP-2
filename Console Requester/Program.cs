@@ -1,5 +1,6 @@
 ﻿using Lomtseu;
 using System;
+using System.Net.Http;
 
 namespace Lomtseu.ConsoleRequester
 {

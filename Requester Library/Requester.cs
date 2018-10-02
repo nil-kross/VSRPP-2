@@ -2,12 +2,37 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Lomtseu
 {
+    public class ResponseHandler : DelegatingHandler
+    {
+        public ResponseHandler()
+        {
+            this.InnerHandler = new HttpClientHandler();
+        }
+
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            // work on the request 
+            //Trace.WriteLine(request.RequestUri.ToString());
+
+            return base.SendAsync(request, cancellationToken)
+             .ContinueWith(task =>
+             {
+             // work on the response
+             var response = task.Result;
+                 response.Headers.Add("X-Dummy-Header", Guid.NewGuid().ToString());
+                 return response;
+             });
+        }
+    }
+
     public class Requester
     {
-        private HttpClient _httpClient = new HttpClient();
+        private HttpClient _httpClient = new HttpClient(new ResponseHandler());
 
         protected HttpClient Client {
             get => this._httpClient;
