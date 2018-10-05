@@ -19,11 +19,9 @@ namespace Lomtseu
             var now = DateTime.Now;
             String fetchNameString = String.Format(
                 "{0} to {1}",
-                now.ToString("yy.MM.dd hh.mm.fff"),
+                now.ToString("yy.MM.dd hh:mm.fff"),
                 request.RequestUri.ToString()
             );
-            // work on the request 
-            //Trace.WriteLine(request.RequestUri.ToString());
 
             return base.SendAsync(request, cancellationToken)
                 .ContinueWith(task =>
