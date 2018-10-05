@@ -16,19 +16,21 @@ namespace Lomtseu
 
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            var now = DateTime.Now;
+            ILogger logger = Loggers.GetNew();
             String fetchNameString = String.Format(
-                "{0} to {1}",
-                now.ToString("yy.MM.dd hh:mm.fff"),
-                request.RequestUri.ToString()
+                "{0}",
+                DateTime.Now.ToString("yy_MM_dd hh_mm_fff")
             );
+
+            logger.Log(fetchNameString, request);
 
             return base.SendAsync(request, cancellationToken)
                 .ContinueWith(task =>
                 {
-                    // work on the response
                     var response = task.Result;
-                    response.Headers.Add("X-Dummy-Header", Guid.NewGuid().ToString());
+
+                    logger.Log(fetchNameString, response);
+
                     return response;
                 });
         }
