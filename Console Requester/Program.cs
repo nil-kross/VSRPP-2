@@ -8,6 +8,18 @@ namespace Lomtseu.ConsoleRequester
     {
         static void Main(string[] args)
         {
+            Program.DebugInterface();
+        }
+
+        static void DebugInterface()
+        {
+            Requester req = new Requester();
+
+            var res = req.GetResponseString(new Uri($"http://google.com/"));
+        }
+
+        static void UserInterface()
+        {
             Requester requester = new Requester();
             var isDone = false;
 
@@ -45,7 +57,8 @@ namespace Lomtseu.ConsoleRequester
                     );
 
                     Console.ReadLine();
-                } else
+                }
+                else
                 {
                     isDone = true;
                 }
