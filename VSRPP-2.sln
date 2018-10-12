@@ -3,14 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console Requester", "Console Requester\Console Requester.csproj", "{94A9D276-17C6-498B-AE97-B307467787E5}"
-	ProjectSection(ProjectDependencies) = postProject
-		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED} = {2D0E682D-07D1-4EDA-A377-26A6CFE612ED}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Requester", "Requester\Requester.csproj", "{83C32B86-A1CE-4BBE-9C3E-BC9EDD79F74A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Requester Library", "Requester Library\Requester Library.csproj", "{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console Requester", "Console Requester\Console Requester.csproj", "{2DBC1497-9344-4FFD-8FC4-12B5DBCDC9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYT Requester", "NYT Requester\NYT Requester.csproj", "{BCD35683-9BAE-4922-B428-BB593CA509DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYT Requester", "NYT Requester\NYT Requester.csproj", "{799CEBD7-9A47-4A09-AB09-56FDA11DC137}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{94A9D276-17C6-498B-AE97-B307467787E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94A9D276-17C6-498B-AE97-B307467787E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94A9D276-17C6-498B-AE97-B307467787E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94A9D276-17C6-498B-AE97-B307467787E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D0E682D-07D1-4EDA-A377-26A6CFE612ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCD35683-9BAE-4922-B428-BB593CA509DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C32B86-A1CE-4BBE-9C3E-BC9EDD79F74A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C32B86-A1CE-4BBE-9C3E-BC9EDD79F74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C32B86-A1CE-4BBE-9C3E-BC9EDD79F74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C32B86-A1CE-4BBE-9C3E-BC9EDD79F74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBC1497-9344-4FFD-8FC4-12B5DBCDC9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBC1497-9344-4FFD-8FC4-12B5DBCDC9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBC1497-9344-4FFD-8FC4-12B5DBCDC9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBC1497-9344-4FFD-8FC4-12B5DBCDC9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799CEBD7-9A47-4A09-AB09-56FDA11DC137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799CEBD7-9A47-4A09-AB09-56FDA11DC137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799CEBD7-9A47-4A09-AB09-56FDA11DC137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799CEBD7-9A47-4A09-AB09-56FDA11DC137}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

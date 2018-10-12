@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lomtseu.Requester.NYT
+namespace Lomtseu
 {
     public static class ApiKey
     {

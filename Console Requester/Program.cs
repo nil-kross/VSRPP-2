@@ -8,19 +8,19 @@ namespace Lomtseu.ConsoleRequester
     {
         static void Main(string[] args)
         {
-            Program.DebugInterface();
+            Program.UserInterface();
         }
 
         static void DebugInterface()
         {
-            Requester req = new Requester();
+            Requester req = new Requester(new LoggingHandler(new FileLogger(true)));
 
             var res = req.GetResponseString(new Uri($"http://google.com/"));
         }
 
         static void UserInterface()
         {
-            Requester requester = new Requester();
+            Requester requester = new Requester(new LoggingHandler(new ConsoleLogger(true)));
             var isDone = false;
 
             while (!isDone)

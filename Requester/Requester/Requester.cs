@@ -2,46 +2,20 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Lomtseu
 {
-    public class ResponseHandler : DelegatingHandler
+    public class Requester : IRequester
     {
-        public ResponseHandler()
-        {
-            this.InnerHandler = new HttpClientHandler();
-        }
-
-        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-        {
-            ILogger logger = Loggers.GetNew();
-            String fetchNameString = String.Format(
-                "{0}",
-                DateTime.Now.ToString("yy_MM_dd hh_mm_fff")
-            );
-
-            logger.Log(fetchNameString, request);
-
-            return base.SendAsync(request, cancellationToken)
-                .ContinueWith(task =>
-                {
-                    var response = task.Result;
-
-                    logger.Log(fetchNameString, response);
-
-                    return response;
-                });
-        }
-    }
-
-    public class Requester
-    {
-        private HttpClient _httpClient = new HttpClient(new ResponseHandler());
+        private HttpClient _httpClient;
 
         protected HttpClient Client {
             get => this._httpClient;
+        }
+
+        public Requester(DelegatingHandler handler)
+        {
+            this._httpClient = new HttpClient(handler);
         }
 
         protected HttpResponseMessage GetResponseMessage(Uri uri)
