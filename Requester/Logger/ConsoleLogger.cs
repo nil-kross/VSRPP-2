@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Lomtseu.Logger
 {
-    public class ConsoleLogger : AbsLogger
+    public class ConsoleLogger : BaseLogger
     {
         public ConsoleLogger(Boolean isSavingFile = false) : base(isSavingFile) { }
 

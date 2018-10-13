@@ -4,7 +4,7 @@ using System.Net.Http;
 
 namespace Lomtseu
 {
-    public abstract class AbsLogger: ILogger
+    public abstract class BaseLogger: ILogger
     {
         private Boolean _isSavingFilesValue;
 
@@ -12,7 +12,7 @@ namespace Lomtseu
             get => this._isSavingFilesValue;
         }
 
-        public AbsLogger(Boolean isSavingFiles = false)
+        public BaseLogger(Boolean isSavingFiles = false)
         {
             this._isSavingFilesValue = isSavingFiles;
         }

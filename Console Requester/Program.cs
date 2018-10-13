@@ -1,4 +1,5 @@
 ﻿using Lomtseu;
+using Lomtseu.Logger;
 using System;
 using System.Net.Http;
 
@@ -13,9 +14,10 @@ namespace Lomtseu.ConsoleRequester
 
         static void DebugInterface()
         {
+            var exampleUrl = new Uri($"http://google.com/");
             Requester req = new Requester(new LoggingHandler(new FileLogger(true)));
 
-            var res = req.GetResponseString(new Uri($"http://google.com/"));
+            var res = req.GetResponseString(exampleUrl);
         }
 
         static void UserInterface()

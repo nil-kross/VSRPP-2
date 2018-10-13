@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Lomtseu
 {
-    public class FileLogger : AbsLogger, IDisposable
+    public class FileLogger : BaseLogger, IDisposable
     {
         private ICollection<String> _fileNamesStringsCollection;
 
@@ -23,6 +23,7 @@ namespace Lomtseu
                 {
                     streamWriter.Write(currString);
                 }
+                streamWriter.Flush();
             }
         }
 

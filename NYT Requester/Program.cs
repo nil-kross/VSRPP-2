@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Lomtseu.Logger;
+using System;
 
+// API source:
 // http://developer.nytimes.com/books_api.json#/Console/GET/lists/best-sellers/history.json
 
 namespace Lomtseu
@@ -9,7 +11,7 @@ namespace Lomtseu
         static void Main(string[] args)
         {
             var url = new Uri($"http://developer.nytimes.com/proxy/https/api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key={ApiKey.ToString()}");
-            IRequester requester = new Requester(new LoggingHandler(new ConsoleLogger(false)));
+            IRequester requester = new Requester(new LoggingHandler(new FileLogger(false)));
 
             var res = requester.GetResponseItem<BestSellersResponse>(url);
             Console.WriteLine(" Press any key to continue ...");
